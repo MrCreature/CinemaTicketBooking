@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: indianred;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 166.125px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: red;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: darkred;
+            color: white;
+        }
+
+        .bg_img{
+            background-image: url("assets/kilyan-sockalingum-478724-unsplash.jpg");
+            height: 90%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #login{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width : 1000px;
+            height : 500px;
+            transform: translate(-50%, -50%);
+            background-color: rgba(245, 245, 245,0.6);
+            padding: 30px;
+            border: 1px solid black;
+            border-radius: 10px;
+            font-family: Calibri, sans-serif;
+        }
+        #vertical_line{
+            background-color: black;
+            position: fixed;
+            left : 50%;
+            top: 50%;
+            height: 500px;
+            width:2px;
+            transform: translate(-50%, -50%);
+            float: left;
+        }
+        .button{
+            background-color: gray;
+            border: 1px solid black;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px 2px;
+            cursor: pointer;
+        }
+
+        #new_acc{
+            float: left;
+            margin-left: 125px;
+        }
+        #sign_in{
+            float:left;
+        }
+    </style>
+</head>
+
+<body class="bg_img">
+
+    <div style="text-align: center">
+        <h1 style="color: white;">Welcome to SPcinema</h1>
+    </div>
+    <div>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Movies.html">Movies</a></li>
+            <li><a href="Theatres.html">Theatres</a></li>
+            <li><a class="active" href="#">Login</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+    </div>
+
+
+    <div id="login">
+        <form>
+            <div id="sign_in" style="padding-left: 25px;padding-top: 50px">
+                <h1 style="font-size: 30px">Username : </h1>
+                <br>
+                <input id="name" type="text" name="Username" style="padding-top: 10px;width: 375px">
+                <br>
+                <br>
+                <h1 style="font-size: 30px">Password : </h1>
+                <br>
+                <input id="pass" type="text" name="Password" style="padding-top: 10px;width: 375px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <button type="submit" class="button" style="width: 180px">Login</button>
+                <button type="submit" class="button" style="width: 180px">Forgot Pass</button>
+            </div>
+
+            <div id="vertical_line">
+            </div>
+
+            <div id="new_acc" style="padding-left: 25px;padding-top: 50px;padding-bottom: 10px">
+                <h1 style="font-size: 15px">Username : </h1>
+                <br>
+                <input id="newName" type="text" name="Username" style="padding-top: 10px;width: 375px">
+                <br>
+                <br>
+                <h1 style="font-size: 15px">Password : </h1>
+                <br>
+                <input id="newPass_1" type="text" name="Password" style="padding-top: 10px;width: 375px">
+                <h1 style="font-size: 15px">Confirm Password : </h1>
+                <br>
+                <input id="newPass_2" type="text" name="Password" style="padding-top: 10px;width: 375px">
+                <br>
+                <br>
+                <br>
+                <br>
+                <button type="submit" class="button" style="width: 185px">Login</button>
+                <button type="submit" class="button" style="width: 185px">Forgot Pass</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

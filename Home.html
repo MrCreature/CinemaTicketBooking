@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: indianred;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 166.125px;
+			text-decoration: none;
+		}
+
+		li a.active {
+			background-color: red;
+			color: white;
+		}
+
+		li a:hover:not(.active) {
+			background-color: darkred;
+			color: white;
+		}
+		.bg_img{
+			background-image: url("assets/peter-lewicki-411606-unsplash.jpg");
+			height: 90%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+    </style>
+</head>
+<body class="bg_img">
+	<div style="text-align: center">
+		<h1 style="color: white;">Welcome to SPcinema</h1>
+	</div>
+	<div>
+		<ul>
+			<li><a class="active" href="#">Home</a></li>
+			<li><a href="Movies.html">Movies</a></li>
+			<li><a href="Theatres.html">Theatres</a></li>
+			<li><a href="Login.html">Login</a></li>
+			<li><a href="AboutUs.html">About Us</a></li>
+		</ul>
+	</div>
+</body>
+</html>
