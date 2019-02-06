@@ -33,11 +33,12 @@
         }
 
         .bg_img{
-            background-image: url("assets/kilyan-sockalingum-478724-unsplash.jpg");
+            background-image: url("assets/rob-laughter-491252-unsplash.jpg");
             height: 90%;
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         #login{
             position: fixed;
             top: 50%;
@@ -75,11 +76,14 @@
         }
 
         #new_acc{
-            float: left;
-            margin-left: 125px;
+            float: right;
+            padding-right : 35px;
+            height: 500px;
         }
         #sign_in{
             float:left;
+            padding-left : 35px;
+            height : 500px;
         }
     </style>
 </head>
@@ -101,28 +105,30 @@
 
 
     <div id="login">
-        <form>
-            <div id="sign_in" style="padding-left: 25px;padding-top: 50px">
-                <h1 style="font-size: 30px">Username : </h1>
-                <br>
-                <input id="name" type="text" name="Username" style="padding-top: 10px;width: 375px">
-                <br>
-                <br>
-                <h1 style="font-size: 30px">Password : </h1>
-                <br>
-                <input id="pass" type="text" name="Password" style="padding-top: 10px;width: 375px">
-                <br>
-                <br>
-                <br>
-                <br>
-                <button type="submit" class="button" style="width: 180px">Login</button>
-                <button type="submit" class="button" style="width: 180px">Forgot Pass</button>
-            </div>
+        <div id="sign_in">
+           <form>
+               <h1 style="font-size: 30px">Username : </h1>
+               <br>
+               <input id="name" type="text" name="Username" style="padding-top: 10px;width: 375px">
+               <br>
+               <br>
+               <h1 style="font-size: 30px">Password : </h1>
+               <br>
+               <input id="pass" type="text" name="Password" style="padding-top: 10px;width: 375px">
+               <br>
+               <br>
+               <br>
+               <br>
+               <button type="submit" class="button" style="width: 180px">Login</button>
+               <button type="submit" class="button" style="width: 180px">Forgot Pass</button>
+           </form>
+        </div>
 
-            <div id="vertical_line">
-            </div>
+        <div id="vertical_line">
+        </div>
 
-            <div id="new_acc" style="padding-left: 25px;padding-top: 50px;padding-bottom: 10px">
+        <div id="new_acc">
+            <form>
                 <h1 style="font-size: 15px">Username : </h1>
                 <br>
                 <input id="newName" type="text" name="Username" style="padding-top: 10px;width: 375px">
@@ -140,9 +146,8 @@
                 <br>
                 <button type="submit" class="button" style="width: 185px">Login</button>
                 <button type="submit" class="button" style="width: 185px">Forgot Pass</button>
-            </div>
-
-        </form>
+            </form>
+        </div>
     </div>
 </body>
 </html>
