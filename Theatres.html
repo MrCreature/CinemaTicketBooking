@@ -1,0 +1,73 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/tab.css">
+    <style>
+        .bg_img{
+            background-image: url("assets/rob-laughter-491252-unsplash.jpg");
+            height: 90%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .basicSearch button{
+            float: left;
+            padding: 10px;
+            background: blue;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        .basicSearch button:hover{
+            background: darkblue;
+        }
+        .basicSearch input[type=text]{
+            float : left;
+            padding: 10px;
+            width: 1000px;
+            font-size: 17px;
+            border: none;
+        }
+        .basicSearch{
+            position: fixed;
+            left: 50%;
+            width : 1200px;
+            margin-top : 40px;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body class="bg_img" style="color: white;">
+<div style="text-align: center;margin-top: 10px">
+    <h1 style="color: white;">Welcome to SPcinema</h1>
+</div>
+<div>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Movies.html">Movies</a></li>
+        <li><a class="active" href="#">Theatres</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+    </ul>
+</div>
+
+<br>
+<div class="basicSearch">
+    <form>
+        <input type="text" placeholder="Search...">
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div style="float:right;margin-right: 700px">
+    <form>
+        <span>Location :</span>
+        <input align="center" type="text" placeholder="Location" width="1000px">
+        <span>Date : </span>
+        <input type="date" name="date">
+        <button type="submit">Search</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,36 +1,7 @@
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="css/tab.css">
     <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: indianred;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 166.125px;
-            text-decoration: none;
-        }
-
-        li a.active {
-            background-color: red;
-            color: white;
-        }
-
-        li a:hover:not(.active) {
-            background-color: darkred;
-            color: white;
-        }
-
         .bg_img{
             background-image: url("assets/rob-laughter-491252-unsplash.jpg");
             height: 90%;
@@ -91,29 +62,31 @@
     <br>
     <br>
     <form>
-        <input align="center" type="text" placeholder="Location" width="1000px"> <p>Date : </p>
-        <input type="date" name="date"><br>
-        <p>Type : </p>
-        <input type="radio" name="type" checked> 2D
-        <input type="radio" name="type"> 3D
-        <input type="radio" name="type"> All
-        <br>
-        <p>Genre : </p>
-        <input type="radio" name="genre" checked> Horror
-        <input type="radio" name="genre"> Action
-        <input type="radio" name="genre"> Drama
-        <input type="radio" name="genre"> Comedy
-        <p>Language : </p>
-        <select name="Language">
-            <option value="">All</option>
-            <option value="">Hindi</option>
-            <option value="">English</option>
-            <option value="">Tamil</option>
-            <option value="">Marathi</option>
-        </select>
-        <br>
-        <br>
-        <input type="submit">
+        <div style="float:right;margin-right: 450px">
+            <span>Location : </span>
+            <input align="center" type="text" placeholder="Location" width="1000px">
+            <span>Date : </span>
+            <input type="date" name="date">
+            <span>Type : </span>
+            <input type="radio" name="type" checked> 2D
+            <input type="radio" name="type"> 3D
+            <input type="radio" name="type"> All
+            
+            <span>Genre : </span>
+            <input type="radio" name="genre" checked> Horror
+            <input type="radio" name="genre"> Action
+            <input type="radio" name="genre"> Drama
+            <input type="radio" name="genre"> Comedy
+            <span>Language : </span>
+            <select name="Language">
+                <option value="">All</option>
+                <option value="">Hindi</option>
+                <option value="">English</option>
+                <option value="">Tamil</option>
+                <option value="">Marathi</option>
+            </select>
+            <button type="submit">Search</button>
+        </div>
     </form>
 </body>
 </html>
