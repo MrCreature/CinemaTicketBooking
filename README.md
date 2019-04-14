@@ -1,3 +1,3 @@
 # CinemaTicketBooking
 
-Project for WTS Lab
+Project for WTL Lab (OLD)
